@@ -8,4 +8,4 @@ RUN unzip digimedia.zip
 RUN cp -rvf digimedia/* .
 RUN rum -rf digimedia digimedia.zip 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
