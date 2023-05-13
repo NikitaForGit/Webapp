@@ -1,7 +1,7 @@
 FROM centos:latest
-RUN yum update httpd
-RUN yum install httpd
-RUN yum install zip unzip
+RUN yum update -y httpd
+RUN yum install -y httpd
+RUN yum install -y zip unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/digimedia.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip digimedia.zip
